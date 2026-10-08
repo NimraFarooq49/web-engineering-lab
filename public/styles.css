@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #222;
+}
+
+header {
+  background-color: #17365d;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header p {
+  max-width: 700px;
+  margin: auto;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  background: white;
+  color: #17365d;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #17365d;
+  border-bottom: 2px solid #2e75b6;
+  padding-bottom: 8px;
+}
+
+figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+figcaption {
+  color: #555;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #d9eaf7;
+  color: #17365d;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+form {
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+fieldset {
+  margin-top: 20px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+fieldset label {
+  display: inline;
+  margin-right: 20px;
+}
+
+button {
+  background-color: #17365d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0f2745;
+}
+
+footer {
+  background-color: #17365d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffffff;
+}

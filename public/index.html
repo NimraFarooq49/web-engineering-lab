@@ -3,22 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Engineering Lab 01</title>
+    <title>Web Engineering Lab 02</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h1>Hello, I am Nimra</h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <p>
-      I am an Artificial Intelligence student interested in learning web
-      development and modern web technologies.
-    </p>
+    <header>
+      <h1 id="greeting">Hello, I am Nimra</h1>
 
-    <h2>What I Expect to Learn</h2>
+      <p>
+        I am an Artificial Intelligence student interested in web development
+        and modern web technologies.
+      </p>
 
-    <ul>
-      <li>HTML and CSS</li>
-      <li>JavaScript and Node.js</li>
-      <li>Git and GitHub</li>
-    </ul>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="#office-hours" aria-current="location"> Office Hours </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="office-hours">
+        <h2>Office Hours</h2>
+
+        <figure>
+          <svg
+            role="img"
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Office hours calendar icon</title>
+            <rect
+              x="10"
+              y="15"
+              width="60"
+              height="55"
+              fill="none"
+              stroke="black"
+              stroke-width="3"
+            />
+            <line
+              x1="10"
+              y1="30"
+              x2="70"
+              y2="30"
+              stroke="black"
+              stroke-width="3"
+            />
+            <line
+              x1="25"
+              y1="8"
+              x2="25"
+              y2="22"
+              stroke="black"
+              stroke-width="3"
+            />
+            <line
+              x1="55"
+              y1="8"
+              x2="55"
+              y2="22"
+              stroke="black"
+              stroke-width="3"
+            />
+            <circle cx="25" cy="45" r="4" fill="black" />
+            <circle cx="40" cy="45" r="4" fill="black" />
+            <circle cx="55" cy="45" r="4" fill="black" />
+          </svg>
+
+          <figcaption>Office hours calendar</figcaption>
+        </figure>
+
+        <table>
+          <caption>
+            Weekly office hours
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Start Time</th>
+              <th scope="col">End Time</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td><time datetime="10:00">10:00 AM</time></td>
+              <td><time datetime="12:00">12:00 PM</time></td>
+            </tr>
+
+            <tr>
+              <td>Wednesday</td>
+              <td><time datetime="13:00">1:00 PM</time></td>
+              <td><time datetime="15:00">3:00 PM</time></td>
+            </tr>
+
+            <tr>
+              <td>Friday</td>
+              <td><time datetime="10:00">10:00 AM</time></td>
+              <td><time datetime="12:00">12:00 PM</time></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <svg
+          aria-hidden="true"
+          width="100%"
+          height="20"
+          viewBox="0 0 900 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="0"
+            y1="10"
+            x2="900"
+            y2="10"
+            stroke="black"
+            stroke-width="2"
+          />
+        </svg>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-describedby="email-hint"
+          />
+
+          <p id="email-hint">Please enter a valid email address.</p>
+
+          <fieldset>
+            <legend>Preferred contact method</legend>
+
+            <label>
+              <input
+                type="radio"
+                name="contact-method"
+                value="email"
+                required
+              />
+              Email
+            </label>
+
+            <label>
+              <input type="radio" name="contact-method" value="phone" />
+              Phone
+            </label>
+          </fieldset>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        Contact Nimra at
+        <a href="mailto:nimra@example.com"> nimra@example.com </a>
+      </address>
+    </footer>
   </body>
 </html>
